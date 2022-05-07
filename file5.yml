@@ -1,1 +1,6 @@
-Hello world
+---
+- hosts: localhost
+  tasks:
+     - copy:
+          content: "Wellcome to {{ ansible_hostname }}"
+          dest: /etc/motd
